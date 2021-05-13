@@ -17,9 +17,7 @@ const useStyles = makeStyles((theme) => ({
   title:{
       textAlign:'center',
   },
-  list:{
-    marginLeft:10,
-  },
+  
   
 }));
 export default function Project() {
@@ -52,7 +50,7 @@ export default function Project() {
         <br />
         <Divider />
         <br />
-        <Grid container spacing={3} className={classes.list}>   
+        <Grid container spacing={3} className="list">   
             {menu}           
         
             
