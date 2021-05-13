@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
   title:{
       textAlign:'center',
   },
+  list:{
+    marginLeft:10,
+  },
   
 }));
 export default function Project() {
@@ -27,7 +30,7 @@ export default function Project() {
   const menu = projects.map((project) => {
     
     return (
-        <Grid item xs={12} sm={12} md={4} xl={4} lg={4}>
+        <Grid item xs={12} sm={6} md={4} xl={4} lg={4}>
             <ProjectCard project={project} />
                
         </Grid>
@@ -49,7 +52,7 @@ export default function Project() {
         <br />
         <Divider />
         <br />
-        <Grid container spacing={3}>   
+        <Grid container spacing={3} className={classes.list}>   
             {menu}           
         
             

@@ -1,7 +1,6 @@
-
-import s from './ss.jpg'
 import Button from '@material-ui/core/Button';
 import React from 'react';
+import sp from '../images/sp.jpg'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -27,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
+    borderRadius: '50%',
+    
+  },
+  link:{
+    textDecoration:'None',
   },
 }));
 
@@ -39,7 +43,7 @@ export default function Me() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="sumit pande" src={s} />
+              <img className={classes.img} alt="sumit pande" src={sp} />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
@@ -59,9 +63,12 @@ export default function Me() {
                 </Typography>
               </Grid>
               <Grid item>
+              <a className={classes.link} target='blank' href='https://www.canva.com/design/DAEUzCrRnEE/XN09MK3TyaTnaHUULNsCuQ/view?utm_content=DAEUzCrRnEE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'>
+
                 <Button variant="outlined" color="secondary">
-                    Download Resume
-                </Button>
+                  Resume
+                    
+                </Button></a>
               </Grid>
             </Grid>
             <Grid item>

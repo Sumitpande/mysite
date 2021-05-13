@@ -5,12 +5,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
+
 import { makeStyles } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-import Button from '@material-ui/core/Button';
-import logo from './lo.png'
+
+import logo from '../images/lo.png'
 function ElevationScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -38,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     },
     appBar: {
       borderBottom: `2px solid ${theme.palette.divider}`,
-      backgroundColor:"#6d1bcc",
+      backgroundColor:"#1f194d",
     },
     toolbar: {
         flexWrap: 'wrap',
@@ -77,17 +75,6 @@ export default function Nav(props) {
             <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
                 Sumit
             </Typography>
-            <nav>
-                <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                Features
-                </Link>
-                <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                Enterprise
-                </Link>
-                <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                Support
-                </Link>
-            </nav>
             
             </Toolbar>
         </AppBar>

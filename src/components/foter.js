@@ -1,22 +1,22 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import purple from '@material-ui/core/colors/purple';
+import InstagramIcon from '@material-ui/icons/Instagram';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginTop:10,
-    backgroundColor:'#6d1bcc',
+    backgroundColor:'#1f194d',
     
   },
   icon: {
       height:50,
       width:50,
+      color:'#ffffff',
   }
   
 }));
@@ -34,16 +34,26 @@ export default function Footer() {
             alignItems="center"
             spacing={3}>
         <Grid item >
-          <GitHubIcon className={classes.icon} />
+          <a href="https://github.com/Sumitpande" target="blank">
+            <GitHubIcon className={classes.icon} />
+          </a>
         </Grid>
         <Grid item >
-          <LinkedInIcon className={classes.icon} />
+          <a href="https://linkedin.com/in/sumit-pande" target="blank">
+            <LinkedInIcon className={classes.icon} />
+          </a>
         </Grid>
         <Grid item >
-          <TwitterIcon className={classes.icon} />
+          <a href="https://twitter.com/sumitpande_" target="blank">
+            <TwitterIcon className={classes.icon} />
+          </a>
+          
         </Grid>
         <Grid item >
-          <WhatsAppIcon className={classes.icon} />
+          <a href="https://instagram.com/sumyaa22" target="blank">
+            <InstagramIcon className={classes.icon} />
+          </a>
+                    
         </Grid>
         
       </Grid>
