@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-
+import LinkIcon from '@material-ui/icons/Link';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
@@ -103,6 +103,12 @@ export default function ProjectCard(props) {
         <IconButton aria-label="Code">
           <a href={props.project.code} target="blank">
             <CodeIcon />
+          </a>
+          
+        </IconButton>
+        <IconButton aria-label="site">
+          <a href={props.project.site} target="blank">
+            <LinkIcon />
           </a>
           
         </IconButton>

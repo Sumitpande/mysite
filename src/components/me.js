@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
   img: {
     margin: 'auto',
     display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
+    maxWidth: '80%',
+    maxHeight: '80%',
     borderRadius: '50%',
     
   },
@@ -50,20 +50,20 @@ export default function Me() {
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="h3">
-                  Hey There! I'm Sumit Pande
+                  Hey There!<br />I'm Sumit Pande
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                   Developer
                 </Typography>
                 <Typography variant="body1" >
                 Aiming
-                to leverage proven communication,
+                to leverage proven communication,<br />
                 leadership, and technical skills to
                 successfully fill the Developer role in good firm.
                 </Typography>
               </Grid>
               <Grid item>
-              <a className={classes.link} target='blank' href='https://www.canva.com/design/DAEUzCrRnEE/XN09MK3TyaTnaHUULNsCuQ/view?utm_content=DAEUzCrRnEE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'>
+              <a className={classes.link} target='blank' href='https://www.canva.com/design/DAEUzCrRnEE/XN09MK3TyaTnaHUULNsCuQ/view?utm_content=DAEUzCrRnEE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
 
                 <Button variant="outlined" color="secondary">
                   Resume
